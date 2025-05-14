@@ -66,12 +66,6 @@ Abre Termux y navega al directorio del bot:
     cd ../ && cd Zero-Two && npm start
    ```
 
-Inicia el bot nuevamente:
-  
-   ```bash
-    npm start
-   ```
-
 </details>
 
 ---
