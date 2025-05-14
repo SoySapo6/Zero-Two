@@ -1,7 +1,7 @@
 {
-"name": "Megumin-Bot-MD",
+"name": "Zero Two",
 "version": "2.0.5",
-"description": "El Bot Más Explosivo De WhatsApp",
+"description": "Jeje",
 "main": "index.js",
 "type": "module",
 "directories": {
@@ -16,16 +16,16 @@
 "eslint": "eslint .",
 "eslintfix": "eslint --fix ."
 },
-"homepage": "https://github.com/David-Chian/Megumin-Bot-MD",
+"homepage": "https://github.com/SoySapo6/Zero-Two",
 "author": {
-"name": "David-Chian"
+"name": "SoyMaycol & Yosue"
 },
 "repository": {
 "type": "git",
-"url": "git+https://github.com/David-Chian/Megumin-Bot-MD.git"
+"url": "git+https://github.com/SoySapo6/Zero-Two.git"
 },
 "bugs": {
-"url": "https://github.com/David-Chian/Megumin-Bot-MD/issues"
+"url": "https://github.com/SoySapo6/Zero-Two/issues"
 },
 "license": "GPL-3.0-or-later",
 "dependencies": {
@@ -92,7 +92,8 @@
 "megajs": "^1.1.3",
 "mime-types": "^2.1.35",
 "api-dylux": "^1.7.2",
-"yargs": "^17.3.1"
+"yargs": "^17.3.1",
+"string-similarity": "^4.0.4"
 },
 "optionalDependencies": {
 "wa-sticker-formatter": "^4.3.2",
