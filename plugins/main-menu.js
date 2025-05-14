@@ -28,18 +28,17 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 let mentionedJid = [who]
 let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/QGAVS.jpg')
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
-const vid = ['https://telegra.ph/file/32e696946433c03588726.mp4', 'https://telegra.ph/file/5293a73eb90a920f8948b.mp4', 'https://telegra.ph/file/d5ed2537cb22b628d8ef1.mp4']
-
+const vid = ['https://files.catbox.moe/6fl2aj.mp4'],
 let menu = `.........․⁀⸱⁀⸱︵⸌⸃૰⳹․💥․⳼૰⸂⸍︵⸱⁀⸱⁀․........
 𔓕꯭  ꯭ 𓏲꯭֟፝੭ ꯭⌑(꯭𝐄).꯭𝐗.꯭𝐏.꯭𝐋.꯭𝐎.꯭𝐒.꯭𝐈.꯭𝐎.꯭𝐍꯭⌑꯭ 𓏲꯭֟፝੭ ꯭  ꯭𔓕
 ▬͞▭͞▬͞▭͞▬͞▭͞▬͞▭͞▬͞▭͞▬͞▭͞▬͞▭͞▬͞▭
 
-“ Hola *${taguser}* soy *Megumin-Bot*, ${saludo} ”
+“ Hola *${taguser}* soy *Zero Two*, ${saludo} ”
 
 .    ╭─ׅ─ׅ┈ ─๋︩︪─☪︎︎︎̸⃘̸࣭ٜ࣪࣪࣪۬◌⃘۪֟፝֯۫۫︎⃪𐇽۫۬🍧⃘⃪۪֟፝֯۫۫۫۬◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸─ׅ─ׅ┈ ─๋︩︪─╮
 ╭╼☁️⬪࣪ꥈ𑁍⃪࣭۪ٜ݊݊݊݊݊໑ٜ࣪ 🄼🄴🄽🅄-🄱🄾🅃໑⃪࣭۪ٜ݊݊݊݊𑁍ꥈ࣪⬪☁️
 ┃֪࣪  ╰─ׅ─ׅ┈ ─๋︩︪─☪︎︎︎̸⃘̸࣭ٜ࣪࣪࣪۬◌⃘۪֟፝֯۫۫︎⃪𐇽۫۬🍧⃘⃪۪֟፝֯۫۫۫۬◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸─ׅ─ׅ┈ ─๋︩︪─╯
-├ׁ̟̇❍✎ *🄲ʀᴇᴀᴅᴏʀ:* David Chian
+├ׁ̟̇❍✎ *🄲ʀᴇᴀᴅᴏʀ:* Yosue & SoyMaycol
 ├ׁ̟̇❍✎ *🄼ᴏᴅᴏ:* Público
 ├ׁ̟̇❍✎ *🄻ɪʙʀᴇʀɪᴀ:* Baileys
 ├ׁ̟̇❍✎ *🄱ᴏᴛ:* ${(conn.user.jid == global.conn.user.jid ? 'Oficial' : 'SubBot')}
@@ -513,7 +512,7 @@ await conn.sendMessage(m.chat, { video: { url: vid.getRandom() }, caption: menu,
 await m.react(emojis)    
 
 } catch (e) {
-await m.reply(`✘ Ocurrió un error al enviar el menú\n\n${e}`)
+await m.reply(`¡Ups! Zero Two se equivocó en algo. Intentanlo mas tarde! <3\n\n${e}`)
 await m.react(error)
 }}
 
