@@ -31,20 +31,19 @@ global.sessions = 'ZeroSessioms'
 global.jadi = 'JadiZero'
 global.meguminJadibts = true
 
-//• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 💌
-global.packsticker = `♾ ━━━━━━━━\n├ ɓσƭ:\n├ ρяοριєταяιο:\n├ ƒєϲнα ∂є ϲяєαϲιόи:\n├ нοяα:\n♾━━━━━━━━`
-global.packname = `🔥⭑𝗠𝗲𝗴𝘂𝗺𝗶𝗻-𝗕𝗼𝘁⭑(^_^♪)`
-global.author = `♾━━━━━━━━\n⇝͟͞ ۵̤͟𝚳̶̤𝚵̅𝔾̈͟𝖀𝐌̶̤𝚰̅𝚴̈͟♡̵̑ ͟͞   ᷨᜳ ͦ ̵ͭ⋆\n⇝ ۵-̱̅𝐃𝖆𝒗𝖏𝖉𐝃𐋃ᶜʱⁱᵃᶯ-͞ˍ\n⇝ ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}\n⇝ ${moment.tz('America/Los_Angeles').format('HH:mm:ss')} \n♾━━━━━━━━\n\n\n\nѕτιϲκєя ϐγ: ৎ୭࠭͢𝑴𝒆̤𝒈𝒖̣֟፝֯𝒎̤𝒊̣𝒏🔥̤ʙⷪᴏ͓ᷫᴛⷭ𓆪͟͞ `;
-global.wm = 'ৎ୭࠭͢𝑴𝒆̤𝒈𝒖̣֟፝֯𝒎̤𝒊̣𝒏🔥̤ʙⷪᴏ͓ᷫᴛⷭ𓆪͟͞ ';
-global.titulowm = '͟͞ ৎ୭࠭͢💥͟𝑬̶𝒙͞𝒑͟𝒍𝒐̶𝒔̅𝒊͟𝒐́𝒏̶🔥̤𓆪 ͟͞';
-global.titulowm2 = `͟͞ ৎ୭࠭͢💥͟𝑬̶𝒙͞𝒑͟𝒍𝒐̶𝒔̅𝒊͟𝒐́𝒏̶🔥̤𓆪 ͟͞`
-global.igfg = 'ᥫᩣᎠ꯭I𝚫⃥꯭M꯭Ꭷ꯭Ꮑ꯭Ꭰ࠭⋆̟(◣_◢)凸'
-global.botname = '⏤͟͞ू⃪ ፝͜⁞M͢ᴇɢ፝֟ᴜᴍ⃨ɪɴ⃜✰⃔࿐'
-global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ ძᥲ᥎іძ ᥴһіᥲᥒ ❀'
-global.textbot = '⏤͟͞ू⃪ ፝͜⁞M͢ᴇɢ፝֟ᴜᴍ⃨ɪɴ⃜✰⃔࿐ : ᥫᩣᎠ꯭I𝚫⃥꯭M꯭Ꭷ꯭Ꮑ꯭Ꭰ࠭⋆̟(◣_◢)凸'
-global.gt = '͟͞ ৎ୭࠭͢💥͟𝑬̶𝒙͞𝒑͟𝒍𝒐̶𝒔̅𝒊͟𝒐́𝒏̶🔥̤𓆪 ͟͞';
-global.namechannel = '⏤͟͞ू⃪ ፝͜⁞M͢ᴇɢ፝֟ᴜᴍ⃨ɪɴ⃜✰⃔࿐/ᥫᩣᎠ꯭I𝚫⃥꯭M꯭Ꭷ꯭Ꮑ꯭Ꭰ࠭⋆̟(◣_◢)凸'
-
+//• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • ❤️‍🔥Zero Two Edition  
+global.packsticker = `♾━━━━━━━━━━━━\n├ ɴᴀᴍᴇ: 𝙕𝙚𝙧𝙤 𝙏𝙬𝙤 ⚡\n├ ᴄʀᴇᴀᴅᴏʀᴇs: Yosue & SoyMaycol\n├ ғᴇᴄʜᴀ: ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}\n├ ʜᴏʀᴀ: ${moment.tz('America/Los_Angeles').format('HH:mm:ss')}\n♾━━━━━━━━━━━━`
+global.packname = `⚡⭑𝙕𝙀𝙍𝙊 𝙏𝙒𝙊 𝘽𝙊𝙏⭑⚡`
+global.author = `♾━━━━━━━━━━━━━━━━━\n⇝ 💖 𝘾𝙧𝙚𝙖𝙙𝙤 𝙘𝙤𝙣 𝙖𝙢𝙤𝙧 𝙥𝙤𝙧: Yosue & SoyMaycol\n⇝ ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}\n⇝ ${moment.tz('America/Los_Angeles').format('HH:mm:ss')} \n♾━━━━━━━━━━━━━━━━━\n\n𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝙗𝙮: ⚡𝙕𝙚𝙧𝙤 𝙏𝙬𝙤 𝘽𝙤𝙩⚡`
+global.wm = '⚡⭑𝙕𝙀𝙍𝙊 𝙏𝙒𝙊 𝘽𝙊𝙏⭑⚡'
+global.titulowm = '⟬⚡𝙕𝙀𝙍𝙊 𝙏𝙒𝙊: 𝙋𝙊𝘿𝙀𝙍 𝙔 𝘾𝙃𝘼𝙍𝙈⟭'
+global.titulowm2 = '⟬⚡𝙀𝙇 𝘽𝙊𝙏 𝘿𝙀 𝙇𝙊𝙎 𝙋𝙍𝙊⟭'
+global.igfg = '❤‍ZeroTwo_4_Ever⁺₊✦͙˚'
+global.botname = '⏤͟͞ू⃪⚡𝙕𝙀𝙍𝙊 𝙏𝙒𝙊 𝘽𝙊𝙏⚡'
+global.dev = '© 𝘿𝙚𝙨𝙖𝙧𝙧𝙤𝙡𝙡𝙖𝙙𝙤 𝙥𝙤𝙧 Yosue & SoyMaycol'
+global.textbot = '⚡𝙕𝙚𝙧𝙤 𝙏𝙬𝙤 𝘽𝙤𝙩: 𝘼𝙡 𝙨𝙚𝙧𝙫𝙞𝙘𝙞𝙤 𝙙𝙚 𝙡𝙖 𝙚𝙡𝙞𝙩𝙚.'
+global.gt = '⚡⭑𝙁𝙐𝙀𝙂𝙊 𝙔 𝙋𝘼𝙎𝙄𝙊́𝙉⭑⚡'
+global.namechannel = 'SoyMaycol & Yosue'
 
 //• ↳ ◜𝑰𝑴𝑨́𝑮𝑬𝑵𝑬𝑺◞ • 🌇
 global.imagen1 = 'https://files.catbox.moe/2gjynr.jpeg'
