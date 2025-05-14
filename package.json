@@ -1,5 +1,5 @@
 {
-"name": "Zero Two",
+"name": "Zero-Two",
 "version": "2.0.5",
 "description": "Jeje",
 "main": "index.js",
@@ -18,7 +18,7 @@
 },
 "homepage": "https://github.com/SoySapo6/Zero-Two",
 "author": {
-"name": "SoyMaycol & Yosue"
+"name": "SoyMaycol"
 },
 "repository": {
 "type": "git",
