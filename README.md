@@ -1,61 +1,20 @@
-> 💥 Versión actual: ^2.0.5
-
-<h1 align="center">💣 Megumin WaBot</p>
+<h1 align="center">Zero Two</p>
 <p>
-        <img src= "https://qu.ax/CbzQU.jpg">
+        <img src= "https://files.catbox.moe/ndmr41.jpeg">
     </p>
 
 ---
 
 ## Descripción
 
-Megumin es un bot de WhatsApp multifuncional basado en `baileys`. Este bot ofrece una variedad de características para mejorar tu experiencia en WhatsApp.
+Zero Two es un bot de WhatsApp multifuncional basado en `baileys`. Este bot ofrece una variedad de características para mejorar tu experiencia en WhatsApp.
 
 ---
 
 ### **`❤️ YouTube 🍬`**
-<a href="https://youtube.com/@davidchian4957">
-  <img width="180px" src="https://files.catbox.moe/3m3dih.jpg"/>
+<a href="https://youtube.com/@Palito-100">
+  <img width="180px" src="https://files.catbox.moe/hoekpw.jpeg"/>
 </a>
-
-<details>
- <summary><b>:paperclip: Tutoriales</b></summary>
-
-- **Cafirexos:** [Aquí](https://youtu.be/tiZ1scp5-EA?si=PgU2U7Nclk4wEJzR)
-- **Termux:** [Aquí](https://youtu.be/gqtGeXRLImQ?si=PpM7EitywqFunEU5)
-- **Sky:** [Aquí](https://youtu.be/TzHyGH_6GH0?si=uKS3h8MXIhMOGrEM)
-
-</details>
-
----
-
-### **`🌋 Cafirexos 🚀`**
-<a href="https://cafirexos.com">
-  <img width="180px" src="https://cdn.cafirexos.com/logos/logo_cfros_2000x2000.png"/>
-</a>
-
-<details>
- <summary><b>:paperclip: Enlaces Importantes</b></summary>
-
-- **Sitio Web:** [Aquí](https://cafirexos.com)
-- **Área de Clientes:** [Aquí](https://clientes.cafirexos.com)
-- **Panel de Control:** [Aquí](https://panel.cafirexos.com)
-- **Estado de los Servicios:** [Aquí](https://estado.cafirexos.com)
-
-</details>
-
----
-
-### **`☁️ Sky Ultra Plus 🚀`**
-<a href="https://dash.skyultraplus.com/"><img src="https://files.catbox.moe/62pqnw.jpg" height="100px"></a>
-
-<details>
- <summary><b>:paperclip: Enlaces Importantes</b></summary>
-
-- **Dash:** [`Aquí`](https://dash.skyultraplus.com)
-- **Panel:** [`Aquí`](https://panel.skyultraplus.com)
-
-</details>
 
 ---
 
@@ -64,7 +23,7 @@ Megumin es un bot de WhatsApp multifuncional basado en `baileys`. Este bot ofrec
 <details>
  <summary><b>:paperclip: 🖤 Comandos</b></summary>
 
-<img src="https://files.catbox.moe/uut7ke.jpg" alt="MeguminBot" style="width: 100%; height: auto; max-width: 500px;">
+<img src="https://files.catbox.moe/tqnil6.jpeg" alt="Zero Two" style="width: 100%; height: auto; max-width: 500px;">
 
 > Nota: Copie y pegue los comandos en termux uno por uno.
 ```bash
@@ -76,7 +35,7 @@ apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 
 ```bash
-git clone https://github.com/David-Chian/Megumin-Bot-MD && cd Megumin-Bot-MD
+git clone https://github.com/SoySapo6/Zero-Two && cd Zero-Two
 ```
 
 ```bash
@@ -104,7 +63,7 @@ npm start
 Abre Termux y navega al directorio del bot:
    
    ```bash
-    cd Megumin-Bot-MD
+    cd ../ && cd Zero-Two && npm start
    ```
 
 Inicia el bot nuevamente:
@@ -117,15 +76,34 @@ Inicia el bot nuevamente:
 
 ---
 
-### **`🌴 CONTRIBUTORS`**
-<a href="https://github.com/David-Chian/Megumin-Bot-MD/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=David-Chian/Megumin-Bot-MD" /> 
-</a>
+# 🌃 NightAPI 🌌
+Integrado con NightAPI
 
-### **`👑 CREADOR`**
-<a
-href="https://github.com/David-Chian"><img src="https://github.com/David-Chian.png" width="130" height="130" alt="David"/></a>
+<p align="center">
+  <img src="https://files.catbox.moe/0wjz52.png" width="500">
+</p>
 
-## **`✨ GRACIAS`**
-<a
-href="https://github.com/BrunoSobrino"><img src="https://github.com/BrunoSobrino.png" width="130" height="130" alt="BrunoSobrino"/></a>
+<details>
+ <summary><b>🔮 Enlaces Oficiales </b></summary>
+
+ * Pagina Web  [`¡Click aquí!`](https://nightapioficial.onrender.com/)
+   
+</details>
+
+<details>
+<summary><b>📞 Contacto</b></summary>
+
+* WhatsApp: [`Aquí`](https:/Wa.me/51921826291)
+
+</details>
+
+<details>
+<summary><b>💻 Funciones</b></summary>
+
+<p align="center">
+  <img src="https://files.catbox.moe/mtqu28.png" width="500">
+</p>
+
+</details>
+
+> Este bot Ha sido hecho SoyMaycol & Yosue Con <3
