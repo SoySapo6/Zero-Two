@@ -15,14 +15,14 @@ const require = createRequire(__dirname)
 const { name, description, author, version } = require(join(__dirname, './package.json'))
 const rl = createInterface(process.stdin, process.stdout)
 
-cfonts.say('Megumin', {
+cfonts.say('Zero Two', {
   font: 'block',
   align: 'center',
   colors: ['blue', 'cyan'],
   gradient: ['magenta', 'yellow']
 })
 
-cfonts.say('Made With David-Chian', {
+cfonts.say('Hecho por Yosue & SoyMaycol', {
   font: 'console',
   align: 'center',
   colors: ['cyan', 'magenta', 'yellow']
