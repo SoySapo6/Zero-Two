@@ -1,85 +1,95 @@
 import fetch from 'node-fetch';
-const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-  if (usedPrefix == 'a' || usedPrefix == 'A') return;
+
+const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   try {
     const pp = imagen2;
-    const d = new Date(new Date + 3600000);
-    const locale = 'es-ES';
-    const week = d.toLocaleDateString(locale, {weekday: 'long'});
-    const date = d.toLocaleDateString(locale, {day: '2-digit', month: '2-digit', year: 'numeric'});
+    const videoURL = 'https://files.catbox.moe/m7nd3i.mp4'; // URL del video del menú
+
+    const d = new Date(new Date() + 3600000);
+    const locale = 'es';
+    const date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric'});
     const _uptime = process.uptime() * 1000;
     const uptime = clockString(_uptime);
-    const user = global.db.data.users[m.sender];
-    const {money, joincount} = global.db.data.users[m.sender];
-    const {exp, limit, level, role} = global.db.data.users[m.sender];
-    const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
-    const rtotal = Object.entries(global.db.data.users).length || '0'
-    const more = String.fromCharCode(8206);
-    const readMore = more.repeat(850);
-    const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-    const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
+    const rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length;
 
- await conn.sendMessage(m.chat, { react: { text: '🍨', key: m.key } })
+    const str = `┏━━━━━━━━━━━━━━━━━━━━┓
+૮₍ ˶•⤙•˶ ₎ა ׅ  ¡𝙃ᴏʟᴀ! ¿𝘾ᴏᴍᴏ 𝙀𝙨ᴛᴀ́𝙨? ׄ 
+ㅤ💙${𝙩𝙖𝙜𝙪𝙨𝙚𝙧}
+ㅤㅤ❤ ּ ${𝙨𝙖𝙡𝙪𝙙𝙤} ׄ 💙
+┃ ◉— 𝙕𝙚𝙧𝙤 𝙩𝙬𝙤—◉
+┣⟣☯ 𝙾𝚆𝙽𝙴𝚁: Yosue
+┣⟣☯ 𝙽𝚄𝙼𝙴𝚁𝙾:+58 4242773183
+┣⟣☯ 𝙵𝙴𝙲𝙷𝙰: ${date}
+┣⟣☯ 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}
+┣⟣☯ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂: ${rtotalreg}
+┗━━━━━━━━━━━━━━━━━━━━┛
+┏━━━━━━━━━━━━━━━━┓
+┃ 🌹𝐀𝐍𝐈𝐌𝐄 𝐌𝐄𝐍𝐔🍷
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
+┣⟣❥👻  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙡𝙤𝙡𝙞𝙫𝙞𝙙_
+┣⟣❥🥺  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙡𝙤𝙡𝙞_
+┣⟣❥😘  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙥𝙥𝙘𝙤𝙪𝙥𝙡𝙚_
+┣⟣❥🧐 _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙣𝙚𝙠𝙤_
+┣⟣❥🙁  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙬𝙖𝙞𝙛𝙪_
+┣⟣❥😝  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙖𝙠𝙞𝙧𝙖_
+┣⟣❥😈 _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙖𝙠𝙞𝙮𝙖𝙢𝙖_
+┣⟣❥🌹  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙖𝙣𝙣𝙖_
+┣⟣❥❤️  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙖𝙨𝙪𝙣𝙖_
+┣⟣❥🍷 _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙖𝙮𝙪𝙯𝙖𝙬𝙖_
+┣⟣❥🫂  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙗𝙤𝙧𝙪𝙩𝙤_
+┣⟣❥🥰  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙘𝙝𝙞𝙝𝙤_
+┣⟣❥😍  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙘𝙝𝙞𝙩𝙤𝙜𝙚_
+┣⟣❥💔  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙙𝙚𝙞𝙙𝙖𝙧𝙖_
+┣⟣❥😎  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙚𝙧𝙯𝙖_
+┣⟣❥😋  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙚𝙡𝙖𝙞𝙣𝙖_
+┣⟣❥🤩  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙚𝙗𝙖_
+┣⟣❥🤤  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙚𝙢𝙞𝙡𝙞𝙖_
+┣⟣❥🥴  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙝𝙚𝙨𝙩𝙞𝙖_
+┣⟣❥🥱  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙝𝙞𝙣𝙖𝙩𝙖_
+┣⟣❥🤭  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙞𝙣𝙤𝙧𝙞_
+┣⟣❥🤯  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙞𝙨𝙪𝙯𝙪_
+┣⟣❥😳  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙞𝙩𝙖𝙘𝙝𝙞_
+┣⟣❥😲  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙞𝙩𝙤𝙧𝙞_
+┣⟣❥😵  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙠𝙖𝙜𝙖_
+┣⟣❥🤠  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙠𝙖𝙜𝙪𝙧𝙖_
+┣⟣❥☠️  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙠𝙖𝙤𝙧𝙞_
+┣⟣❥💀  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙠𝙚𝙣𝙚𝙠𝙞_
+┣⟣❥🤑  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙠𝙤𝙩𝙤𝙧𝙞_
+┣⟣❥👾  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙠𝙪𝙧𝙪𝙢𝙞_
+┣⟣❥🥸  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙢𝙖𝙙𝙖𝙧𝙖_
+┣⟣❥😓  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙢𝙞𝙠𝙖𝙨𝙖_
+┣⟣❥😥  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙢𝙞𝙠𝙪_
+┣⟣❥😢  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙢𝙞𝙣𝙖𝙩𝙤
+┣⟣❥😶  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙣𝙖𝙧𝙪𝙩𝙤_
+┣⟣❥🙃  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙣𝙚𝙯𝙪𝙠𝙤_
+┣⟣❥😘  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙨𝙖𝙜𝙞𝙧𝙞_
+┣⟣❥🥰  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙨𝙖𝙨𝙪𝙠𝙚_
+┣⟣❥😁  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙨𝙖𝙠𝙪𝙧𝙖_
+┣⟣❥🥰  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭} *zero two*
+┣⟣❥😁  _${𝙪𝙨𝙚𝙙𝙋𝙧𝙚𝙛𝙞𝙭}𝙘𝙤𝙨𝙥𝙡𝙖𝙮_
 
-
-const document = doc[Math.floor(Math.random() * doc.length)];
- const str = `╭━━━･❪ *MENU/ANIME* ❫ ･━━━╮
-┣⟣❥🔮  _!sakurita_
-┣⟣❥🔮  _!karolg_
-┣⟣❥🔮  _!antiguo_
-┣⟣❥🔮  _!lolivid_
-┣⟣❥🔮  _!loli_
-┣⟣❥🔮  _!ppcouple_
-┣⟣❥🔮  _!neko_
-┣⟣❥🔮  _!waifu_
-┣⟣❥🔮  _!akira_
-┣⟣❥🔮  _!akiyama_
-┣⟣❥🔮  _!anna_
-┣⟣❥🔮  _!asuna_
-┣⟣❥🔮  _!ayuzawa_
-┣⟣❥🔮  _!boruto_
-┣⟣❥🔮  _!chiho_
-┣⟣❥🔮  _!chitoge_
-┣⟣❥🔮  _!deidara_
-┣⟣❥🔮  _!erza_
-┣⟣❥🔮  _!elaina_
-┣⟣❥🔮  _$!eba_
-┣⟣❥🔮  _!emilia_
-┣⟣❥🔮  _!hestia_
-┣⟣❥🔮  _!hinata_
-┣⟣❥🔮  _!inori_
-┣⟣❥🔮  _!isuzu_
-┣⟣❥🔮  _!itachi_
-┣⟣❥🔮  _!itori_
-┣⟣❥🔮  _!kaga_
-┣⟣❥🔮  _!kagura_
-┣⟣❥🔮  _!kaori_
-┣⟣❥🔮  _!keneki_
-┣⟣❥🔮  _!kotori_
-┣⟣❥🔮  _!kurumi_
-┣⟣❥🔮  _!madara_
-┣⟣❥🔮  _!mikasa_
-┣⟣❥🔮  _!miku_
-┣⟣❥🔮  _!minato_
-┣⟣❥🔮  _!naruto_
-┣⟣❥🔮  _!nezuko_
-┣⟣❥🔮  _!sagiri_
-┣⟣❥🔮  _!sasuke_
-┣⟣❥🔮  _!sakura_
-┣⟣❥🔮  _!cosplay_
-┗━━━━━━━━━━━━━━━━┛`.trim();   
-      conn.sendMessage(m.chat, {imageUrl: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m});
- 
-  } catch {
-    conn.reply(m.chat, e, m);
-  }
+> Hola este menú 𝙩𝙚𝙣𝙙𝙧𝙖 más waifus estén atentos a las actualizaciones creadores soymaycol y yosue y nagi ૮₍ ˶•⤙•˶ ₎ა
+┗━━━━━━━━━━━━━━━━┛`;
+    const fkontak2 = {
+      'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'},
+      'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nFN:Yosue\nEND:VCARD`}},
+      'participant': '0@s.whatsapp.net'
 };
-handler.command = ['animesmenu','menuanimes'];
-handler.register = true
-export default handler;
-function clockString(ms) {
-  const h = isNaN(ms) ? '--' : Math.floor(ms / 3600000);
-  const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60;
-  const s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60;
-  return [h, m, s].map((v) => v.toString().padStart(2, 0)).join(':');
+
+    await conn.sendMessage(m.chat, {image: pp, caption: str.trim()}, {quoted: fkontak2});
+    await conn.sendMessage(m.chat, {video: {url: videoURL}, caption: '🌸 *Aquí tienes tu menú Waifu junto con el video*'}, {quoted: fkontak2});
+
+} catch (err) {
+    conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] Hubo un error al enviar el menú, verifica la conexión o la URL del video.*', m);
 }
+};
+
+handler.command = /^(menuanime)$/i;
+export default handler;
+
+function clockString(ms) {
+  const h = Math.floor(ms / 3600000);
+  const m = Math.floor(ms / 60000) % 60;
+  const s = Math.floor(ms / 1000) % 60;
+  return [h, m, s].map(v => v.toString().padStart(2, '0')).join(':');
+      }
